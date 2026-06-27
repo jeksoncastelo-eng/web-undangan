@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wedding of David & Ani - Undangan Digital Pernikahan</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Tanpa mengurangi rasa hormat, perkenankan kami mengundang Anda untuk menghadiri acara Pernikahan kami: Janri Patar Naibaho, S.Kom & Selvia Meilinda Samosir, S.Tr.Keb., M.Biomed., Bdn. Senin, 22 Juni 2026.">
+  <meta name="keywords" content="Undangan Pernikahan, David & Ani, Wedding Invitation, Undangan Digital, Batak Modern">
+  <meta name="author" content="WeInvitation">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Wedding: David & Ani">
+  <meta property="og:description" content="Jumat, 24 Juli 2026. Kami mengundang Anda untuk menghadiri pernikahan kudus kami.">
+  <meta property="og:image" content="assets/cover.jpg">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ==========================================
+       1. COVER GATE (HALAMAN PEMBUKA)
+       ========================================== -->
+  <div id="cover-gate" class="cover-gate">
+    <div class="cover-ornament-top"></div>
+    <div class="cover-content">
+      <p class="cover-greeting">The Wedding of</p>
+      
+      <!-- Halaman Utama menggunakan foto bergandeng tangan menggunakan ulos batak -->
+      <div class="cover-photo-wrapper">
+        <img src="/foto/2.jpeg" alt="David & Ani Batak Dress" onerror="this.src='media__1782585732944.jpg'">
+      </div>
+      
+      <h1 class="cover-title">David & Ani</h1>
+      <p class="cover-subtitle">Jumat, 24 Juli 2026</p>
+      
+      <div class="guest-card">
+        <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+        <div id="guest-name" class="guest-name">Nama Tamu Undangan</div>
+        <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.8;">*Tanpa Mengurangi Rasa Hormat</p>
+      </div>
+      
+      <button id="btn-open" class="btn-open">
+        <i class="fa-solid fa-envelope-open"></i> Buka Undangan
+      </button>
+    </div>
+    <div class="cover-ornament-bottom"></div>
+  </div>
+  <!-- ==========================================
+       2. APP CONTAINER (SETELAH DIBUKA)
+       ========================================== -->
+  <div id="app-container" class="app-container">
+    <!-- FLOATING MUSIC CONTROLLER -->
+    <div class="music-controller">
+      <button id="music-toggle" class="music-btn">
+        <i id="music-icon" class="fas fa-pause"></i>
+      </button>
+    </div>
+    <!-- BACKGROUND MUSIC AUDIO -->
+    <!-- Sound clip: Soft piano wedding music, user can replace this file at assets/music.mp3 -->
+    <audio id="bg-music" loop>
+      <source src="/musik/musik.mp3.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <!-- BOTTOM NAVIGATION BAR (MOBILE-FRIENDLY) -->
+    <nav class="bottom-nav">
+      <a href="#hero" class="nav-item active"><i class="fas fa-home"></i><span>Cover</span></a>
+      <a href="#couple" class="nav-item"><i class="fas fa-heart"></i><span>Mempelai</span></a>
+      <a href="#event" class="nav-item"><i class="fas fa-calendar-alt"></i><span>Acara</span></a>
+      <a href="#gallery" class="nav-item"><i class="fas fa-images"></i><span>Galeri</span></a>
+      <a href="#rsvp" class="nav-item"><i class="fas fa-comments"></i><span>Ucapan</span></a>
+    </nav>
+    <!-- ==========================================
+         A. HERO / INTRO SECTION
+         ========================================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <!-- SVG Batak Gorga-like Accent -->
+        <svg class="hero-ornament" viewBox="0 0 100 100">
+          <path d="M50 15 L80 35 L80 65 L50 85 L20 65 L20 35 Z" fill="none" stroke="#dfba6b" stroke-width="2"/>
+          <path d="M50 25 L70 40 L70 60 L50 75 L30 60 L30 40 Z" fill="none" stroke="#dfba6b" stroke-width="1"/>
+          <circle cx="50" cy="50" r="8" fill="#dfba6b"/>
+        </svg>
+        <p style="letter-spacing: 4px; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 10px;">The Marriage Celebration of</p>
+        <h2 class="hero-names">David & Ani</h2>
+        <p class="hero-date">Jumat, 24 Juli 2026</p>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+    <!-- ==========================================
+         B. QUOTE / AYAT ALKITAB SECTION
+         ========================================== -->
+    <section id="quote" class="quote-section">
+      <div class="section-container">
+        <div class="quote-container fade-scroll">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="quote-text">
+            "Ia membuat segala sesuatu indah pada waktunya, bahkan Ia memberikan kekekalan dalam hati mereka. Tetapi manusia tidak dapat menyelami pekerjaan yang dilakukan Allah dari awal sampai akhir."
+          </p>
+          <div class="quote-source">Pengkhotbah 3:11</div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================
+         C. COUPLE / MEMPELAI SECTION
+         ========================================== -->
+    <section id="couple" class="couple-section">
+      <div class="section-container">
+        <h2 class="section-title">Kedua Mempelai</h2>
+        <p class="section-subtitle">Tuhan menyatukan kami dalam ikatan pernikahan kudus</p>
+        
+        <div class="couple-grid">
+          <!-- Groom (Pengantin Pria) -->
+          <div class="couple-profile fade-scroll">
+            <div class="profile-frame">
+              <img src="/foto/3c.jpeg" alt="David Hoianda Purba">
+            </div>
+            <h3 class="profile-name">David Hoianda Purba S.Kom</h3>
+            <span class="profile-username">@david</span>
+            <p class="profile-family">
+              Putra terbaik dari:<br>
+              <span>Bapak ????</span><br>
+              &<br>
+              <span>Ibu ????</span>
+            </p>
+          </div>
+          
+          <div class="couple-ampersand fade-scroll">&</div>
+          
+          <!-- Bride (Pengantin Wanita) -->
+          <div class="couple-profile fade-scroll">
+            <div class="profile-frame">
+              <img src="/foto/2c.jpeg" alt="Ani Sondang Saragih">
+            </div>
+            <h3 class="profile-name">Ani Sondang Saragih S.Th</h3>
+            <span class="profile-username">@Ani</span>
+            <p class="profile-family">
+              Putri tercinta dari:<br>
+              <span>Bapak ????</span><br>
+              &<br>
+              <span>Ibu ????</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================
+         D. COUNTDOWN TIMER SECTION
+         ========================================== -->
+    <section class="countdown-section">
+      <div class="section-container">
+        <h2 class="section-title">Hari Bahagia</h2>
+        <p style="font-size: 0.9rem; letter-spacing: 1px; color: #ccc; margin-bottom: 25px;">Menuju ikatan suci janji pernikahan</p>
+        
+        <div class="countdown-container fade-scroll">
+          <div class="countdown-box">
+            <span id="days" class="countdown-num">00</span>
+            <span class="countdown-label">Hari</span>
+          </div>
+          <div class="countdown-box">
+            <span id="hours" class="countdown-num">00</span>
+            <span class="countdown-label">Jam</span>
+          </div>
+          <div class="countdown-box">
+            <span id="minutes" class="countdown-num">00</span>
+            <span class="countdown-label">Menit</span>
+          </div>
+          <div class="countdown-box">
+            <span id="seconds" class="countdown-num">00</span>
+            <span class="countdown-label">Detik</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================
+         E. EVENT DETAILS SECTION
+         ========================================== -->
+    <section id="event" class="event-section">
+      <div class="section-container">
+        <h2 class="section-title">Jadwal Acara</h2>
+        <p class="section-subtitle">Pelaksanaan ibadah pemberkatan dan adat pernikahan</p>
+        
+        <div class="event-cards-container">
+          <!-- Pemberkatan Pernikahan (Holy Matrimony) -->
+          <div class="event-card fade-scroll">
+            <div class="event-icon"><i class="fas fa-church"></i></div>
+            <h3 class="event-type">Pemberkatan Pernikahan</h3>
+            <div class="event-details">
+              <div class="event-info-row">
+                <i class="far fa-calendar-alt"></i>
+                <span>Jumat, 24 Juli 2026</span>
+              </div>
+              <div class="event-info-row">
+                <i class="far fa-clock"></i>
+                <span>Pukul 09.00 WIB s/d Selesai</span>
+              </div>
+              <div class="event-info-row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <div class="event-venue-name">Gereja HKBP Parsoburan</div>
+                  <div class="event-venue-address">Kec. Habinsaran, Kabupaten Toba, Sumatera Utara</div>
+                </div>
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=Gereja+HKBP+Parsoburan" target="_blank" class="btn-map">
+              <i class="fas fa-map-marked-alt"></i> Petunjuk Arah
+            </a>
+          </div>
+          
+          <!-- Pesta Adat & Resepsi (Reception) -->
+          <div class="event-card fade-scroll">
+            <div class="event-icon"><i class="fas fa-glass-cheers"></i></div>
+            <h3 class="event-type">Pesta Adat & Resepsi</h3>
+            <div class="event-details">
+              <div class="event-info-row">
+                <i class="far fa-calendar-alt"></i>
+                <span>Senin, 24 Julii 2026</span>
+              </div>
+              <div class="event-info-row">
+                <i class="far fa-clock"></i>
+                <span>Pukul 11.30 WIB s/d Selesai</span>
+              </div>
+              <div class="event-info-row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <div class="event-venue-name">Wisma Tamaria Parsoburan</div>
+                  <div class="event-venue-address">Jl. Tarutung No.45, Kec. Habinsaran, Kabupaten Toba, Sumatera Utara</div>
+                </div>
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=Wisma+Tamaria+Parsoburan" target="_blank" class="btn-map">
+              <i class="fas fa-map-marked-alt"></i> Petunjuk Arah
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================
+         F. GALLERY SECTION (NO CROPPING)
+         ========================================== -->
+    <section id="gallery" class="gallery-section">
+      <div class="section-container">
+        <h2 class="section-title">Galeri Foto</h2>
+        <p class="section-subtitle">Momen indah kebersamaan kami</p>
+        
+        <div class="gallery-grid">
+          <!-- Item 1 - Batak Traditional Dress (Holding Hands) -->
+          <div class="gallery-item fade-scroll">
+            <div class="gallery-img-wrapper">
+              <img src="/foto/2.jpeg" alt="Janri & Selvia Batak Dress" onerror="this.src='media__1782585732944.jpg'">
+            </div>
+            <div class="gallery-caption">Ulos Batak</div>
+          </div>
+          
+          <!-- Item 2 - Sitting Couple -->
+          <div class="gallery-item fade-scroll">
+            <div class="gallery-img-wrapper">
+              <img src="/foto/4b.jpeg" alt="Janri & Selvia Sitting">
+            </div>
+            <div class="gallery-caption">Kebersamaan</div>
+          </div>
+          
+          <!-- Item 3 - Leaning Couple -->
+          <div class="gallery-item fade-scroll">
+            <div class="gallery-img-wrapper">
+              <img src="/foto/1.jpeg" alt="Janri & Selvia Leaning">
+            </div>
+            <div class="gallery-caption">Senyuman</div>
+          </div>
+
+          <!-- Item 4 - Leaning Couple -->
+          <div class="gallery-item fade-scroll">
+            <div class="gallery-img-wrapper">
+              <img src="/foto/5c.jpeg" alt="Janri & Selvia Leaning">
+            </div>
+            <div class="gallery-caption">Senyuman</div>
+          </div>
+
+          <!-- Item 5 - Outdoor Batak Dress Looking -->
+          <div class="gallery-item fade-scroll">
+            <div class="gallery-img-wrapper">
+              <img src="/foto/1b.jpeg" alt="Janri & Selvia Back to Back" onerror="this.src='media__1782585732949.jpg'">
+            </div>
+            <div class="gallery-caption">Ikatan Suci</div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <!-- ==========================================
+         G. RSVP & WISHES SECTION
+         ========================================== -->
+    <section id="rsvp" class="wishes-section">
+      <div class="section-container">
+        <h2 class="section-title">Ucapan & Konfirmasi</h2>
+        <p class="section-subtitle">Kirim doa restu dan konfirmasi kehadiran Anda</p>
+        
+        <div class="rsvp-container">
+          <!-- Form Konfirmasi Kehadiran -->
+          <div class="rsvp-box fade-scroll">
+            <h3>Buku Tamu & RSVP</h3>
+            <form id="rsvp-form">
+              <div class="form-group">
+                <label for="rsvp-name">Nama Tamu</label>
+                <input type="text" id="rsvp-name" class="form-control" placeholder="Nama Lengkap Anda" required>
+              </div>
+              <div class="form-group">
+                <label for="rsvp-status">Konfirmasi Kehadiran</label>
+                <select id="rsvp-status" class="form-control" required>
+                  <option value="hadir">Hadir</option>
+                  <option value="tidak">Tidak Hadir</option>
+                  <option value="ragu">Ragu-ragu</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="rsvp-message">Ucapan / Doa Restu</label>
+                <textarea id="rsvp-message" class="form-control" rows="4" placeholder="Tulis ucapan selamat dan doa restu Anda..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">
+                Kirim Ucapan <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          
+          <!-- Daftar Ucapan -->
+          <div class="wishes-container fade-scroll">
+            <h3>Doa Restu & Ucapan Tamu</h3>
+            <div id="wishes-list" class="wishes-list">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================
+         H. GIFT / KASIH SECTION
+         ========================================== -->
+    <section id="gift" class="gift-section">
+      <div class="section-container fade-scroll">
+        <h2 class="section-title">Kado Digital</h2>
+        <p class="section-subtitle">Tanda kasih bagi kedua mempelai</p>
+        <p class="gift-intro">
+          Bagi Bapak/Ibu/Saudara/i yang ingin memberikan doa restu atau tanda kasih secara digital, dapat mengirimkannya melalui tombol di bawah ini:
+        </p>
+        <button id="gift-btn" class="gift-btn">
+          <i class="fas fa-gift"></i> Kirim Tanda Kasih
+        </button>
+      </div>
+    </section>
+    <!-- GIFT / ANGPAO MODAL -->
+    <div id="gift-modal" class="gift-modal">
+      <div class="modal-content">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <h3 class="modal-title">Dompet Digital & Transfer Bank</h3>
+        
+        <!-- BCA Bank Account -->
+        <div class="bank-card">
+          <div class="bank-name">Bank BCA</div>
+          <div id="bca-num" class="bank-number">1234567890</div>
+          <div class="bank-owner">a.n. Janri Patar Naibaho</div>
+          <div>
+            <button class="btn-copy" data-num="1234567890">Salin No. Rekening</button>
+          </div>
+        </div>
+        
+        <!-- Bank Mandiri / Other -->
+        <div class="bank-card">
+          <div class="bank-name">Bank Mandiri</div>
+          <div id="mandiri-num" class="bank-number">9876543210123</div>
+          <div class="bank-owner">a.n. Selvia Meilinda Samosir</div>
+          <div>
+            <button class="btn-copy" data-num="9876543210123">Salin No. Rekening</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================================
+         I. FOOTER
+         ========================================== -->
+    <footer>
+      <div class="footer-logo">D & A</div>
+      <p class="footer-text">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.
+      </p>
+      <p class="footer-copyright">
+        © 2026 <a href="#">David & Ani Wedding</a>. All Rights Reserved.
+      </p>
+    </footer>
+  </div>
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
